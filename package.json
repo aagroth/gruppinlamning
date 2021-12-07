@@ -1,7 +1,6 @@
 {
   "name": "gruppinlamning",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "scss": "node-sass styles/main.scss main.css",
@@ -11,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^6.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aagroth/gruppinlamning.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/aagroth/gruppinlamning/issues"
+  },
+  "homepage": "https://github.com/aagroth/gruppinlamning#readme",
+  "description": ""
 }

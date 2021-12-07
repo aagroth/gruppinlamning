@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100h;
+    background: linear-gradient(#67641c, #67641c);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 10000;
+    transition: .3s ease background-color;
+
+
+}
+
+header .logo {
+    color: #FAF8E6;
+    font-size: large;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 25px;  
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px, 15px; 
+    color: whitesmoke;
+    transition: ease-in-out 0.1s;
+
+}
+
+header ul li a:hover ,
+header ul li a.active {
+    background-color: #FAF8E6;
+    color:#5a497a;
+    border-radius: 20px;
+    padding: 6px 12px;
+    
+
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#67641c, transparent);
+    z-index: 1000;
+}
+
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+section img#plants{
+    z-index: 11;
+}
+section img#shapeFront{
+    z-index: 10;
+}
+
+section img#shapeBehind {
+    z-index: 8;
+}
+
+#text {
+    position: absolute;
+    right: -5px;
+    color: whitesmoke;
+    font-size: 7.5vw;
+    font: 1.5rem;
+    font-weight: 500;
+    transform: translateY(-150px);
+    z-index: 9;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    z-index: 12;
+    padding: 8px 30px;
+    border: solid 2px #FAF8E6;
+    border-radius: 40px;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    transition: ease-in-out 0.5s;
+}
+
+#btn:hover {
+    background-color: #FAF8E6;
+    color:#5a497a;
+}
+
+.sec {
+    position: relative;
+    padding: 250px;
+}
+
+.sec h2 {
+    color: #FAF8E6;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sec p{
+    color: #FAF8E6;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sec2 {
+    position: relative;
+    display: flex;
+}
