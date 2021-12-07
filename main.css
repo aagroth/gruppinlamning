@@ -289,3 +289,6 @@ section img#shapeBehind {
   .container .contactInfo,
   .contactForm {
     width: 100%; } }
+
+.lev {
+  margin-top: 200px; }
