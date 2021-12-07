@@ -1,0 +1,50 @@
+
+.section-fos{
+    margin-bottom: 200px;
+    margin-top: 200px;
+    background-color: white;
+    color:black;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-fos{
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+.fos{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #736711;
+    cursor: pointer;
+}
+.fraga{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f1 .f2 .f3{
+    font-size: 2.6rem;
+}
+.svar{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.svar p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+.fos.active .svar{
+    max-height: 300px;
+}
+.fos.active svg{
+    transform: rotate(180deg);
+}
+svg{
+    transition: transform .5 ease-in;
+}
