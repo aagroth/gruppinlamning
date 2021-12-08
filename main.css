@@ -14,7 +14,7 @@
   scroll-behavior: smooth; }
 
 body {
-  min-height: 100h;
+  min-height: 100vh;
   background: linear-gradient(#67641c, #67641c);
   overflow-x: hidden; }
 
@@ -289,3 +289,27 @@ section img#shapeBehind {
   .container .contactInfo,
   .contactForm {
     width: 100%; } }
+
+.centerText {
+  margin-top: 200px;
+  text-align: center; }
+
+.addPageContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+  .addPageContainer .flexContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column; }
+    .addPageContainer .flexContainer input, .addPageContainer .flexContainer button {
+      border-radius: 5px;
+      width: 300px;
+      height: 30px;
+      margin: 10px; }
+    .addPageContainer .flexContainer textarea {
+      border-radius: 5px;
+      width: 300px;
+      height: 100px;
+      margin: 10px; }
