@@ -293,9 +293,10 @@ section img#shapeBehind {
 .terms {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 50px;
-  font-weight: 600; }
+  font-size: larger;
+  color: white; }
 
 .delivery {
   text-align: left;
@@ -303,4 +304,8 @@ section img#shapeBehind {
   padding-right: 10%;
   background-color: white;
   height: auto;
-  width: auto; }
+  width: auto;
+  line-height: 25px; }
+  .delivery h2 {
+    padding-bottom: 1%;
+    padding-top: 1%; }
