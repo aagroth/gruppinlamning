@@ -290,5 +290,17 @@ section img#shapeBehind {
   .contactForm {
     width: 100%; } }
 
-.lev {
-  margin-top: 200px; }
+.terms {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 600; }
+
+.delivery {
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white;
+  height: auto;
+  width: auto; }
