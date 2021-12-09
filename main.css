@@ -109,7 +109,7 @@ link.active {
   transform: translateY(0);
   pointer-events: auto; }
 
-section {
+  .bgPearlbba {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -118,7 +118,7 @@ section {
   justify-content: center;
   align-items: center; }
 
-section::before {
+.bgPearlbba::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -127,7 +127,7 @@ section::before {
   background: linear-gradient(to top, #67641c, transparent);
   z-index: 1000; }
 
-section img {
+.bgPearlbba img {
   position: absolute;
   top: 0;
   left: 0;
@@ -136,13 +136,13 @@ section img {
   object-fit: cover;
   pointer-events: none; }
 
-section img#plants {
+  .bgPearlbba img#plants {
   z-index: 11; }
 
-section img#shapeFront {
+.bgPearlbba img#shapeFront {
   z-index: 10; }
 
-section img#shapeBehind {
+.bgPearlbba img#shapeBehind {
   z-index: 8; }
 
 #text {
