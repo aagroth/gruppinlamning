@@ -228,3 +228,21 @@ header ul li a.active {
     background-color: #FAF8E6;
     color:#5a497a;
 }
+
+.products{
+    background-image: url(/images/Pearlbba-background.png);
+    background-size: cover;
+    background: center;
+    position: relative;
+    z-index: 1;
+}
+.products::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
