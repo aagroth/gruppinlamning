@@ -418,3 +418,26 @@ link.active {
 #btn2:hover {
   background-color: #FAF8E6;
   color: #5a497a; } */
+.centerText {
+  margin-top: 200px;
+  text-align: center; }
+
+.addPageContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+  .addPageContainer .flexContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column; }
+    .addPageContainer .flexContainer input, .addPageContainer .flexContainer button {
+      border-radius: 5px;
+      width: 300px;
+      height: 30px;
+      margin: 10px; }
+    .addPageContainer .flexContainer textarea {
+      border-radius: 5px;
+      width: 300px;
+      height: 100px;
+      margin: 10px; }
