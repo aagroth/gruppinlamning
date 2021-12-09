@@ -3,7 +3,7 @@
 const menu_item = document.querySelectorAll('header ul li a');
     document.addEventListener('scroll', () => {
             var scroll_position = window.scrollY;
-            if(scroll_position > 250){
+            if(scroll_position > 500){
                 header.style.backgroundColor = '#5a497a';
             }else{
                 header.style.backgroundColor = 'transparent';
@@ -26,6 +26,8 @@ window.addEventListener('scroll', function(){
     text.style.marginRight = value * 2 + 'px';
     text.style.marginTop = value * 0.5 + 'px';
     header.style.top = value * 1 + 'px';
+    btn.style.top = value * 1 + 'px';
+
 })
 
 //End scrolling
