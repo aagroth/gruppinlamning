@@ -290,7 +290,26 @@ section img#shapeBehind {
   .contactForm {
     width: 100%; } }
 
-<<<<<<< HEAD
+.purchase {
+  display: flex;
+  justify-content: center;
+  margin-top: 220px;
+  margin-bottom: 50px;
+  font-size: larger;
+  color: white; }
+
+.conditions {
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white;
+  height: auto;
+  width: auto;
+  line-height: 25px; }
+  .conditions h2 {
+    padding-bottom: 1%;
+    padding-top: 1%; }
+
 .terms {
   display: flex;
   justify-content: center;
@@ -310,7 +329,7 @@ section img#shapeBehind {
   .delivery h2 {
     padding-bottom: 1%;
     padding-top: 1%; }
-=======
+
 .centerText {
   margin-top: 200px;
   text-align: center; }
@@ -334,4 +353,3 @@ section img#shapeBehind {
       width: 300px;
       height: 100px;
       margin: 10px; }
->>>>>>> 0f56056db289c0a542e752160012cf096bac5335
