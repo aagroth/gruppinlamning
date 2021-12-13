@@ -14,8 +14,8 @@
   scroll-behavior: smooth; }
 
 body {
-  min-height: 100h;
-  background: linear-gradient(white, white);
+  min-height: 100vh;
+  background: linear-gradient(#67641c, #67641c);
   overflow-x: hidden; }
 
 header {
@@ -109,7 +109,7 @@ link.active {
   transform: translateY(0);
   pointer-events: auto; }
 
-  .bgPearlbba {
+.bgPearlbba {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -124,7 +124,7 @@ link.active {
   bottom: 0;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top, #5a497a, transparent);
+  background: linear-gradient(to top, #67641c, transparent);
   z-index: 1000; }
 
 .bgPearlbba img {
@@ -136,7 +136,7 @@ link.active {
   object-fit: cover;
   pointer-events: none; }
 
-  .bgPearlbba img#plants {
+.bgPearlbba img#plants {
   z-index: 11; }
 
 .bgPearlbba img#shapeFront {
@@ -207,56 +207,23 @@ link.active {
   background-color: #FAF8E6;
   color: #5a497a; }
 
-.products{
-    background-image: url(images/bestsellers_background.png);
-    background-size: cover;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
-    padding: 250px;
-}
+.products {
+  background-image: url(/images/Pearlbba-background.png);
+  background-size: cover;
+  background: center;
+  position: relative;
+  z-index: 1; }
+
 .products::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-} 
-
-.products-container {
-  position: relative;
-  width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-}
-
-.products-container .card {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
   width: 100%;
-  background: #fff;
-}
+  z-index: -1; }
 
-.products-container .card .imgJuv {
-  position: relative;
-  width: 100%;
-  height: 310px;
-  overflow: hidden;
-}
-
-.products-container .card .imgJuv img {
-  object-fit: cover;
-  transition: 0.5;
-}
-
-.products-container .card:hover .imgJuv img {
-  transform: scale(1.5);
-}
-
-
-
-/* .contact {
+.contact {
   position: relative;
   min-height: 100vh;
   padding: 50px 100px;
@@ -417,9 +384,9 @@ link.active {
 
 #btn2:hover {
   background-color: #FAF8E6;
-  color: #5a497a; } */
+  color: #5a497a; }
+
 .centerText {
-  margin-top: 200px;
   text-align: center; }
 
 .addPageContainer {
