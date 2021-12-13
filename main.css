@@ -8,7 +8,6 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#67641c, #67641c);
   overflow-x: hidden; }
 
 #header {
@@ -294,17 +293,15 @@ body {
   background-color: whitesmoke; }
 
 .section_omoss {
-  margin-bottom: 150px;
-  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-top: 100px;
   width: 100%;
-  height: 100vh;
   background-color: white; }
 
 .container_omoss {
   width: 80%;
   display: block;
-  margin: auto;
-  padding-top: 100px; }
+  margin: auto; }
 
 .content-section_omoss {
   float: none;
@@ -378,7 +375,9 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 200px; }
 
 .title-fos {
   font-size: 3rem;
@@ -646,7 +645,7 @@ link.active {
   margin-top: 200px;
   margin-bottom: 50px;
   font-size: larger;
-  color: white; }
+  color: black; }
 
 .delivery {
   text-align: left;
@@ -663,7 +662,7 @@ link.active {
   margin-top: 200px;
   margin-bottom: 50px;
   font-size: larger;
-  color: white; }
+  color: black; }
 
 .conditions {
   text-align: left;
