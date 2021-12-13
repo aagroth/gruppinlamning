@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
-<<<<<<< HEAD
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Ubuntu'; }
-=======
   font-family: 'Ubuntu', sans-serif;
   padding: 0;
   box-sizing: border-box;
@@ -108,7 +102,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 15px;
   text-decoration: none; }
->>>>>>> fragor/omoss
 
 .contact {
   position: relative;
@@ -118,11 +111,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-<<<<<<< HEAD
-  background: #8477c7; }
-=======
   background: #5a497a; }
->>>>>>> fragor/omoss
 
 .contact .content {
   max-width: 800px;
@@ -136,13 +125,9 @@ body {
 
 .contact .content p {
   font-weight: 300;
-<<<<<<< HEAD
-  color: #FAF8E6; }
-=======
   font-size: 16px;
   color: #FAF8E6;
   line-height: 30px; }
->>>>>>> fragor/omoss
 
 .container {
   width: 100%;
@@ -183,11 +168,7 @@ body {
 
 .container .contactInfo .box .text h3 {
   font-weight: 500;
-<<<<<<< HEAD
-  color: #180673; }
-=======
   color: whitesmoke; }
->>>>>>> fragor/omoss
 
 .contactForm {
   width: 40%;
@@ -233,15 +214,6 @@ body {
 .contactForm .inputBox textarea:valid ~ span {
   color: #8477c7;
   font-size: 12px;
-<<<<<<< HEAD
-  transform: translate(-20px); }
-
-.contactForm .inputBox .input [type="submit"] {
-  width: 80px;
-  background-color: #FAF8E6;
-  color: #180673;
-  border: none;
-=======
   transform: translate(20px); }
 
 .inputBoxBtn {
@@ -251,37 +223,10 @@ body {
   border-style: none;
   text-decoration: none;
   border-radius: 40%;
->>>>>>> fragor/omoss
   cursor: pointer;
   padding: 10px;
   font-size: 15px; }
 
-<<<<<<< HEAD
-.social {
-  display: flex;
-  color: #FAF8E6;
-  margin-top: 100px; }
-
-.social .twitter {
-  margin-right: 8px;
-  font-size: 20px; }
-
-.social .facebook {
-  margin-right: 8px;
-  font-size: 20px; }
-
-.social .instagram {
-  margin-right: 8px;
-  font-size: 20px; }
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px; }
-
-@media (max-width: 991px) {
-=======
 .inputBoxBtn:hover {
   color: #FAF8E6; }
 
@@ -472,7 +417,6 @@ svg {
   transition: transform .5 ease-in; }
 
 .centerText {
-  margin-top: 200px;
   text-align: center; }
 
 .addPageContainer {
@@ -593,7 +537,6 @@ svg {
     font-size: 1.5rem; }
   .bgPearlbba #text {
     font-size: 3rem; }
->>>>>>> fragor/omoss
   .contact {
     padding: 50px; }
   .container {
@@ -603,8 +546,6 @@ svg {
   .container .contactInfo,
   .contactForm {
     width: 100%; } }
-<<<<<<< HEAD
-=======
 
 .bgPearlbba {
   position: relative;
@@ -696,4 +637,3 @@ link.active {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto; }
->>>>>>> fragor/omoss
