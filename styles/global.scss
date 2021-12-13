@@ -1,6 +1,14 @@
 *{
-    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu';
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#67641c, #67641c);
+    overflow-x: hidden;
 }

@@ -1,0 +1,101 @@
+
+
+#header{
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+#header .header{
+    min-height: 8vh;
+    background-color: rgba(100, 42, 142, 0.24);
+    transition: .3s ease background-color;
+}
+#header a {
+    text-decoration: none;
+}
+
+#header .nav-bar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+height: 100%;
+max-width: 1300px;
+padding: 0 10px;
+}
+
+#header .nav-list ul {
+    list-style: none;
+    position: absolute;
+    background-color:#5a497a;
+    width: 75vw;
+    height: 100vh;
+    left: 100%; 
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .5s ease left;
+
+}
+#header .nav-list ul.active{
+    left: 25%;
+}
+#header .nav-list ul li a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+#header .nav-list ul a::after{
+    content: attr(data-after);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgba(240, 248, 255, 0.021);
+    font-size: 10rem;
+    letter-spacing: 50px;
+    z-index: 20;
+    transition: .3s ease letter-spacing;
+}
+#header .nav-list ul li:hover a::after{
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+}
+#header .nav-list ul li:hover a{
+    color: yellow;
+}
+
+.brand a h1 {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+
+#text {
+    position: absolute;
+    right: -5px;
+    color: whitesmoke;
+    font-size: 7.5vw;
+    font: 1.5rem;
+    font-weight: 500;
+    transform: translateY(-150px);
+    z-index: 9;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-decoration: none;
+}
+

@@ -1,0 +1,50 @@
+
+.bgPearlbba {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  
+  .bgPearlbba::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #5a497a, transparent);
+    z-index: 1000; }
+  
+  .bgPearlbba img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; }
+  
+    .bgPearlbba img#plants {
+    z-index: 12; }
+  
+  .bgPearlbba img#shapeFront {
+    z-index: 11; }
+  
+  .bgPearlbba img#shapeBehind {
+    z-index: 10; }
+
+    #text {
+        position: absolute;
+        right: -5px;
+        color: whitesmoke;
+        font-size: 7.5vw;
+        font: 1.5rem;
+        font-weight: 500;
+        transform: translateY(-150px);
+        z-index: 9;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+    }
+    

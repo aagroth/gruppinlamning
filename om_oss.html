@@ -6,21 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" 
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" 
+    crossorigin="anonymous"></script>
+    <script src="./script/header.js" defer></script>
 </head>
 
 <!-- Sidhuvud -->
-<header>
-
+<!-- Start Navbar -->
+<header id="header">
+    <div class="header container">
+        <div class="nav-bar">
+            <div class="brand">
+                <a href="#"><h1>PEARLBBA</h1></a>
+            </div>
+            <div class="nav-list">
+                <div class="hamburger">
+                    <div class="bar">
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="shopsida.html" data-after="Shopsida">Shopsida</a></li>
+                    <div class="dropdown">
+                        <li><button class="link">Om oss</button>
+                          <div class="dropdownMenu">
+                              <a id="dropdownText" href="kopvillkor.html">Köpvillkor</a>
+                              <a id="dropdownText" href="leveransvillkor.html">Leveransvillkor</a>
+                              <a id="dropdownText" href="fragor_och_svar.html">Frågor & svar</a>
+                          </div>
+                      </li>
+                      </div>
+                    <li><a href="wishlist.html"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="varukorg.html"><i class="fas fa-shopping-basket" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </header>
+<!-- End Navbar -->
 
 <!-- Sidans body -->
 <body>
-    
+    <div class="section_omoss">
+        <div class="container_omoss">
+            <div class="content-section_omoss">
+                <div class="title_omoss">
+                    <h1> OM OSS </h1>
+                </div>
+                <div class="content_omoss"></div>
+                <h3 class="h3_omoss"> "Vi älskar att du ska kunna visa din personliga stil 
+                          med våra pärlsmycken!" 
+                      - Ebba Kronwall – Grundare av PEARLBBA
+                </h3>   
+                <br>
+                <p  class="parag_omoss">
+                    Pearlbba grundades i Stockholm, Sverige 2020, och är inspirerad av passionen för hållbara smycken och förmågan för alla att ska kunna visa sin unika stil genom skräddarsydda pärlsmycken.
+                    Pearlbba började med målet att designa det perfekta pärlhalsbandet för alla tillfällen. För jobbet lika så  till stranden.
+                    <br> <br>
+                    Vi väljer noga ut pärlorna länk för länk eller pärla för pärla, tusentals pärlor väljs bort innan vi hittar den kvalitet vi söker. 
+                    Lyster, färg och form är vad vi lägger många timmar på att hitta. Vissa av våra pärlor som vi använder har sin naturliga färg och är alltså inte  infärgade. 
+                    Våra rocaillespärlor däremot är noga utvalda så att de infärgas av miljövänliga ämnen.
+                    <br> <br>
+                    Vi har alltid velat erbjuda ett så brett sortiment som möjligt och det är något vi jobbar på ständigt. 
+                    Har du några önskemål om vad du vill se i webshopen är du alltid välkommen att höra av dig till oss via mail!
+                </p> 
+                <div class="button_omoss"> 
+                    <a href="#downToContact">Skicka Meddelande</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <!-- Sidfot -->
 <footer>
-    <section class="contact">
+    <section class="contact" id="downToContact">
         <div class="content">
             <h2>KONTAKTA OSS</h2>
             <p>Nedan finner du våra kontakt uppgifter, även ett kontakt-formulär om du skulle ha några frågor eller liknande är du varmt välkommen att kontakta oss.</p>
@@ -74,9 +138,6 @@
             <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
             <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
             <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
-        </div>
-        <div class="logo">
-            <img src="./pearlbba.logo).png" width="100px" height="25px">
         </div>
 
     </section>
