@@ -1,33 +1,27 @@
-// Start scrolling 
+const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const header = document.querySelector('.header.container');
 
-const menu_item = document.querySelectorAll('header ul li a');
-    document.addEventListener('scroll', () => {
-            var scroll_position = window.scrollY;
-            if(scroll_position > 500){
-                header.style.backgroundColor = '#5a497a';
-            }else{
-                header.style.backgroundColor = 'transparent';
-            }
-    
-        });
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobile_menu.classList.toggle('active');
+});
 
-let plants = document.getElementById('plants');
-let shapeFront = document.getElementById('shapeFront');
-let shapeBehind = document.getElementById('shapeBehind');
-let text = document.getElementById('text');
-let btn = document.getElementById('btn');
-let header = document.querySelector('header');
+document.addEventListener('scroll', () => {
+    var scroll_position = window.scrollY;
+   
+    if(scroll_position > 500){
+        header.style.backgroundColor = '5a497a';
+    }else{
+        header.style.backgroundColor = 'transparent';
+    }
+});
 
-window.addEventListener('scroll', function(){
-    let value = window.scrollY; 
-    shapeBehind.style.top = value * 0.25 + 'px';
-    plants.style.top = value * 0 + 'px';
-    shapeFront.style.top = value * 0 + 'px';
-    text.style.marginRight = value * 2 + 'px';
-    text.style.marginTop = value * 0.5 + 'px';
-    header.style.top = value * 1 + 'px';
-    btn.style.top = value * 1 + 'px';
+menu_item.forEach((item) => {
+    item.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobile_menu.classList.toggle('active');
+    });
+});
 
-})
-
-//End scrolling
