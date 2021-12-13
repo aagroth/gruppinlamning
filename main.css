@@ -17,12 +17,15 @@ body {
   left: 0;
   top: 0;
   width: 100vw;
-  height: auto; }
+  height: auto;
+  background-color: #5a497a; }
 
 #header .header {
   min-height: 8vh;
   background-color: rgba(100, 42, 142, 0.24);
-  transition: .3s ease background-color; }
+  transition: .3s ease background-color;
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 #header a {
   text-decoration: none; }
@@ -133,8 +136,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 30px; }
+  align-items: center; }
 
 .container .contactInfo {
   width: 50%;
@@ -637,3 +639,40 @@ link.active {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto; }
+
+.terms {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-size: larger;
+  color: white; }
+
+.delivery {
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white;
+  height: auto;
+  width: auto;
+  line-height: 25px; }
+
+.purchase {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-size: larger;
+  color: white; }
+
+.conditions {
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white;
+  height: auto;
+  width: auto;
+  line-height: 25px; }
+  .conditions h2 {
+    padding-bottom: 1%;
+    padding-top: 1%; }
