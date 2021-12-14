@@ -8,18 +8,8 @@ hamburger.addEventListener('click', () => {
     mobile_menu.classList.toggle('active');
 });
 
-document.addEventListener('scroll', () => {
-    var scroll_position = window.scrollY;
-   
-    if(scroll_position > 500){
-        header.style.backgroundColor = '5a497a';
-    }else{
-        header.style.backgroundColor = 'transparent';
-    }
-});
-
-menu_item.forEach((item) => {
-    item.addEventListener('click', () => {
+menu_item.forEach((menu_item) => {
+    menu_item.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         mobile_menu.classList.toggle('active');
     });

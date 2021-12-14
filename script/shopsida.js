@@ -2,11 +2,13 @@ var products = JSON.parse(localStorage.getItem('Products'));
 
 products.map((product) => {
 
-    document.querySelector("div").innerHTML += 
-    "<div>" + product.inputFile + "</div>" +
-    "<div>" + product.title + "</div>" +
-    "<div>" + product.artNr + "</div>" +
-    "<div>" + product.price + "</div>";
+    document.getElementById("shopYta").innerHTML += 
+    "<div class=\"productCard\">" +
+    "<img src=\"./products_images/" + product.image + "\">" +
+    "<div class=\"productTitle\">" + product.title + "</div>" +
+    "<div class=\"productArtNr\">" + "Artnr: " + product.artNr + "</div>" +
+    "<div class=\"productPrice\">" + product.price + "kr" + "</div>" +
+    "</div>";
     
 });
 
