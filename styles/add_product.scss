@@ -1,0 +1,32 @@
+.centerText {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.addPageContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .flexContainer {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+
+        input, button {
+            border-radius: 5px;
+            width: 300px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        textarea {
+            border-radius: 5px;
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+        }
+    }
+}
+

@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1200px) {
+
+    header .hamburger{
+        display: none;
+    }
+    header .nav-list ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+    header .nav-list ul li{
+        display: inline-block;
+    }
+    header .nav-list ul li a{
+        font-size: 1.3rem;
+    }
+    header .nav-list ul a::after {
+        display: none;
+    }
+    .brand a h1 {
+        color: whitesmoke;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    .bgPearlbba #text {
+        font-size: 3rem;
+    }
+
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
