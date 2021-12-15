@@ -12,7 +12,9 @@ var product = {
     artNr: inputArtNr,
     title: inputTitle,
     price: inputPrice,
-    image: inputFile
+    image: inputFile,
+    wishListStatus: false,
+    basketStatus: false
 }
 
 let productList;
