@@ -708,3 +708,26 @@ link.active {
     margin-bottom: 5px; }
   .productCard .productPrice {
     text-align: center; }
+
+.title-varukorg {
+  margin-top: 200px;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center; }
+
+.section-shopcart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .section-shopcart .shopcart-container {
+    border: 2px solid yellow;
+    width: 70vw;
+    height: 50vh; }
+
+.send-orderBtn {
+  width: 100px;
+  height: 60px;
+  border-radius: 40%;
+  border: 2px solid #5a497a;
+  font-family: 'Ubuntu';
+  font-size: 20px; }
