@@ -21,10 +21,12 @@
     margin-bottom: 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: #5a497a;
+    border-radius: 20px;
 
 
     img {
         width: 247px;
+        border-radius: 20px 20px 0 0;
     }
 
     .productTitle {
@@ -42,4 +44,43 @@
         text-align: center;
         color: white;
     }
+
+    .productSymbols {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+    
+        .wishListBtn, wishListFalse {
+            color: yellow;
+            font-size: 30px;
+            background-color: transparent;
+            border:none;
+        
+        }
+        
+        .wishListBtn, wishListTrue {
+            color: white;
+            font-size: 30px;
+            background-color: transparent;
+            border: none;
+        
+        }
+        
+        .basketListBtn, basketListFalse {
+            color: yellow;
+            font-size: 30px;
+            background-color: transparent;
+            border:none;
+        }
+        
+        .basketListBtn, basketListTrue {
+            color: white;
+            font-size: 30px;
+            background-color: transparent;
+            border: none;
+        }
+    }
+    
+
 }

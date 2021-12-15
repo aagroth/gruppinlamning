@@ -292,18 +292,6 @@ body {
   color: #5a497a;
   background-color: whitesmoke; }
 
-.wishListBtn, wishListFalse {
-  color: yellow;
-  font-size: 30px;
-  background-color: transparent;
-  border: none; }
-
-.wishListBtn, wishListTrue {
-  color: white;
-  font-size: 30px;
-  background-color: transparent;
-  border: none; }
-
 .section_omoss {
   margin-bottom: 100px;
   margin-top: 200px;
@@ -709,9 +697,11 @@ link.active {
   width: 247px;
   margin-bottom: 30px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  background-color: #5a497a; }
+  background-color: #5a497a;
+  border-radius: 20px; }
   .productCard img {
-    width: 247px; }
+    width: 247px;
+    border-radius: 20px 20px 0 0; }
   .productCard .productTitle {
     text-align: center;
     margin-bottom: 5px;
@@ -724,6 +714,31 @@ link.active {
   .productCard .productPrice {
     text-align: center;
     color: white; }
+  .productCard .productSymbols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px; }
+    .productCard .productSymbols .wishListBtn, .productCard .productSymbols wishListFalse {
+      color: yellow;
+      font-size: 30px;
+      background-color: transparent;
+      border: none; }
+    .productCard .productSymbols .wishListBtn, .productCard .productSymbols wishListTrue {
+      color: white;
+      font-size: 30px;
+      background-color: transparent;
+      border: none; }
+    .productCard .productSymbols .basketListBtn, .productCard .productSymbols basketListFalse {
+      color: yellow;
+      font-size: 30px;
+      background-color: transparent;
+      border: none; }
+    .productCard .productSymbols .basketListBtn, .productCard .productSymbols basketListTrue {
+      color: white;
+      font-size: 30px;
+      background-color: transparent;
+      border: none; }
 
 .title-varukorg {
   margin-top: 200px;
@@ -737,17 +752,69 @@ link.active {
   justify-content: center; }
   .section-shopcart .shopcart-container {
     border: 2px solid yellow;
-    width: 70vw;
+    width: 50vw;
     height: 50vh; }
   .section-shopcart .shopcart-list {
     min-height: 40vh; }
-  .section-shopcart .send-orderBtn {
-    width: 100px;
-    height: 60px;
-    border-radius: 40%;
-    border: 4px solid #5a497a;
-    font-family: 'Ubuntu';
-    font-size: 20px; }
+
+.send-orderBtn {
+  border-radius: 20px;
+  border: 4px solid whitesmoke;
+  background-color: #BFAE30;
+  font-family: 'Ubuntu';
+  font-size: 18px;
+  height: 60px;
+  width: 120px;
+  margin: 0 auto;
+  display: block; }
+
+.delivery-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  .delivery-container .klarna-logo {
+    border: 2px solid #feb4c8;
+    background-color: #feb4c8;
+    border-radius: 10px;
+    margin-right: 5px; }
+
+.send-orderBtn:hover {
+  background-color: whitesmoke;
+  border: 2px solid #BFAE30;
+  color: black; }
+
+.overview-box {
+  border: 2px solid salmon;
+  display: flex;
+  float: right; }
+
+.payment {
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 20px; }
+
+@media only screen and (max-width: 600px) {
+  .section-shopcart {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-shopcart .shopcart-container {
+      width: 90vw;
+      height: 60vh; }
+  .overview-box {
+    border: 2px solid salmon;
+    justify-content: center;
+    width: 90vw;
+    height: 50vh;
+    font-size: 22px; }
+  .delivery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 #wishListYta {
   display: flex;
