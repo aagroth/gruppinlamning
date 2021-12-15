@@ -20,6 +20,7 @@
     width: 247px;
     margin-bottom: 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #5a497a;
 
 
     img {
@@ -30,12 +31,15 @@
         text-align: center;
         margin-bottom: 5px;
         font-size: large;
+        color: white;
     }
     .productArtNr {
         text-align: center;
         margin-bottom: 5px;
+        color: white;
     }
     .productPrice{
         text-align: center;
+        color: white;
     }
 }
