@@ -23,7 +23,7 @@
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
-                    <a href="#"><h1>PEARLBBA</h1></a>
+                    <a href="index.html"><h1>PEARLBBA</h1></a>
                 </div>
                 <div class="nav-list">
                     <div class="hamburger">
@@ -32,15 +32,10 @@
                     </div>
                     <ul>
                         <li><a href="shopsida.html" data-after="Shopsida">Shopsida</a></li>
-                        <div class="dropdown">
-                            <li><button class="link">Om oss</button>
-                              <div class="dropdownMenu">
-                                  <a id="dropdownText" href="kopvillkor.html">Köpvillkor</a>
-                                  <a id="dropdownText" href="leveransvillkor.html">Leveransvillkor</a>
-                                  <a id="dropdownText" href="fragor_och_svar.html">Frågor & svar</a>
-                              </div>
-                          </li>
-                          </div>
+                        <li><a href="om_oss.html" data-after="Shopsida">Om oss</a></li>
+                        <li><a href="fragor_och_svar.html" data-after="Shopsida">Frågor och svar</a></li>
+                        <li><a href="kopvillkor.html" data-after="Shopsida">Köpvillkor</a></li>
+                        <li><a href="leveransvillkor.html" data-after="Shopsida">Leveransvillkor</a></li>
                         <li><a href="wishlist.html"><i class="fas fa-heart"></i></a></li>
                         <li><a href="varukorg.html"><i class="fas fa-shopping-basket" aria-hidden="true"></i></a></li>
                     </ul>
@@ -48,29 +43,6 @@
             </div>
         </div>
     </header>
-
-    <!-- 
-<div class="hamburger">
-    <div class="bar">
-    </div>
-</div>
-        <ul>
-            <li><a href="shopsida.html" class="active">Shopsida</a></li>
-            <li><a href="#downToContact">Kontakt</a></li>
-            <div class="dropdown">
-                <li><button class="link">Om oss</button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-menu-text" href="kopvillkor.html">Köpvillkor</a>
-                    <a class="dropdown-menu-text" href="leveransvillkor.html">Leveransvillkor</a>
-                    <a class="dropdown-menu-text" href="fragor_och_svar.html">Frågor & svar</a>
-                </div>
-            </li>
-            </div>
-            <li><a href= "#"><i class="fas fa-heart"></i></a></li>
-            <li ><a href ="#"><i class="fas fa-shopping-basket" aria-hidden="true"></i></a></li>
-        </ul>
-</header>
--->
 
 <!-- Start Head page-->
 <body>
@@ -84,12 +56,75 @@
 </section>
 <!-- End Head Page-->
 
+<!-- Start Bestsellers -->
+<div class="products">
+        <div class="products-container">
+            <div class="card">
+                <div class="imgJuv">
+                <img src="./products_images/halsband(1).jpg">
+                </div>
+                <div class="content">
+                    <div class="productName">
+                        <h3>Lorem, ipsum dolor</h3>
+                    </div>
+                    <div class="pris">
+                        <h2>499kr</h2>
+                </div>
+            </div>
+        </div>
+        <div class="products-container">
+            <div class="card">
+                <div class="imgJuv">
+                <img src="./products_images/halsband(2).jpg">
+                </div>
+                <div class="content">
+                    <div class="productName">
+                        <h3>Lorem, ipsum dolor</h3>
+                    </div>
+                    <div class="pris">
+                        <h2>599kr</h2>
+                </div>
+            </div>
+        </div>
+        <div class="products-container">
+            <div class="card">
+                <div class="imgJuv">
+                <img src="./products_images/halsband(3).jpg">
+                </div>
+                <div class="content">
+                    <div class="productName">
+                        <h3>Lorem, ipsum dolor</h3>
+                    </div>
+                    <div class="pris">
+                        <h2>499kr</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bestsellers -->
 
- <footer>
-    <div class="contact" id="downToContact">
+<!-- Start Show Public -->
+<div class="sec" id="sec">
+    <h2>VÅRA PÄRLOR</h2>
+        <p>Nästan alla våra pärlor är odlade, det vill säga, växta inuti pärlmusslor men pärlans tillkomst är inte spontan.<br>
+            Vi väljer ut pärlorna länk för länk eller pärla för pärla, tusentals pärlor väljs bort innan vi hittar den kvalitet vi söker.<br> 
+        Lyster, färg och form är vad vi lägger många timmar på att hitta. Vissa av våra pärlor som vi använder har sin naturliga färg <br> och är alltså inte infärgade. Medans våra rocaillespärlor är infärgade men med miljövänliga ämnen. 
+         </p>
+    
+    <div class="centerBtn">
+        <a href="#sec2" id="btn2">Shop</a>
+    </div>
+</div>
+<!-- End show public -->
+
+</body>
+<!-- Sidfot -->
+<footer>
+    <section class="contact" id="downToContact">
         <div class="content">
             <h2>KONTAKTA OSS</h2>
-            <p>Nedan finner du våra kontakt uppgifter, även ett kontakt-formulär om du skulle ha några frågor <br>eller liknande är du varmt välkommen att kontakta oss.</p>
+            <p>Nedan finner du våra kontakt uppgifter, även ett kontakt-formulär om du skulle ha några frågor eller liknande är du varmt välkommen att kontakta oss.</p>
         </div>
         <div class="container">
             <div class="contactInfo">
@@ -130,7 +165,7 @@
                         <textarea required="required"></textarea>
                         <span>SKRIV DITT MEDDELANDE...</span>
                     </div>
-                    <div class="inputBox">
+                    <div class="inputBoxBtn">
                         <input type="submit" name="" value="SKICKA">
                     </div>
                 </form>
@@ -142,9 +177,9 @@
             <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
         </div>
 
-    </div>
+    </section>
 
-</footer> 
+</footer>
 
 </body>
 </html>
