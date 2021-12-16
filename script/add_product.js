@@ -6,18 +6,12 @@ const localStorageProductList = localStorage.getItem('Products');
 let inputArtNr = document.querySelector(".productArtNr").value;
 let inputTitle = document.querySelector(".productTitle").value;
 let inputPrice = document.querySelector(".productPrice").value;
-let inputMaterial = document.querySelector(".productMaterial").value;
-let inputColor = document.querySelector(".productColor").value;
-let inputDescription = document.querySelector(".description").value;
-let inputFile = document.querySelector(".productImg").value;
+let inputFile = document.querySelector(".productImg").files[0].name;
 
 var product = {
     artNr: inputArtNr,
     title: inputTitle,
     price: inputPrice,
-    material: inputMaterial,
-    color: inputColor,
-    description: inputDescription,
     image: inputFile
 }
 

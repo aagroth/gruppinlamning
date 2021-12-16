@@ -1,0 +1,19 @@
+.child{
+  
+   background-color: rgb(67, 152, 227);
+  
+   height: 20rem;
+   width: 0rem;
+    
+   
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 500px 500px;
+   
+
+}
+
+

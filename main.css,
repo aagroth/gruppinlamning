@@ -539,10 +539,13 @@ svg {
   .contactForm {
     width: 100%; } }
 
-@media screen and (min-width: 600px) {
-  .child {
-    height: auto;
-    width: auto; } }
+@media (max-width: 1000px) {
+  .bestCategory-item {
+    min-width: 50%; } }
+
+@media (max-width: 800px) {
+  .bestCategory-item {
+    min-width: 100%; } }
 
 .bgPearlbba {
   position: relative;
@@ -712,37 +715,40 @@ svg {
   .productCard .productPrice {
     text-align: center; }
 
-.child {
-  background-color: #4398e3;
-  height: 20rem;
-  width: 0rem; }
-
-.parent {
-  display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 500px 500px; }
-
-.sec {
+.bestCategories {
   position: relative;
-  min-height: auto;
-  padding: 100px 100px;
+  background-image: url(products_images/pearlbba.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 250px;
+  content: '';
+  display: flex;
+  flex-wrap: wrap; }
+
+.bestCategory-item {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 33.33%;
+  box-sizing: border-box;
+  height: 300px;
+  background-size: cover;
+  background-position: center; }
+
+.bestCategory-item-inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background: #bfae30; }
+  height: 100%; }
 
-.sec h2 {
-  display: flex;
-  text-align: center;
-  color: whitesmoke;
-  margin: 15px;
-  font-size: 2.5rem; }
-
-.sec p {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 25px;
-  color: whitesmoke;
-  line-height: 35px;
-  font-size: 20px; }
+.bestCategory-item-inner > div {
+  padding: 5px 10px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase; }
