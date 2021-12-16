@@ -1,5 +1,5 @@
 .title-varukorg{
-margin-top: 200px;
+margin-top: 160px;
 font-size: 3rem;
 margin-bottom: 30px;
 text-align: center;
@@ -11,10 +11,76 @@ text-align: center;
     .shopcart-container{
         border: 2px solid yellow;
         width: 50vw;
-        height: 50vh; 
+        height: auto; 
+        padding-right: 2%;
+        padding-left: 2%;
     }
     .shopcart-list{
         min-height: 40vh; 
+        max-width: 650px;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .product-header {
+        width: 100%;
+        max-width: 650px;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 4px solid lightgray;
+        margin: 0 auto;
+    }
+    .product-title {
+        width: 45%;
+    }
+    .price {
+        width: 15%;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        align-items: center;
+    }
+    .quantity {
+        width: 30%;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        align-items: center;
+    }
+    .total {
+        width: 10%;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        align-items: center;
+    }
+    .product {
+        width: 45%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid lightgray;
+    }
+    .product ion-icon {
+        cursor: pointer;
+    }
+    .products {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .products img {
+        width: 75px;
+    }
+    .basketTotalContainer { 
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .basketTotalTitle {
+        width: 30%;
+    }
+    .basketTotal {
+        width: 10%;
     }
 }
 .send-orderBtn{
@@ -33,14 +99,36 @@ text-align: center;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 50px;
+}
+.payment-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
     margin-top: 20px;
-    .klarna-logo{
-        border: 2px solid #feb4c8;
-        background-color: #feb4c8;
-        border-radius: 10px;
-        margin-right: 5px;
-    }   
-    }
+}
+.klarna-logo{
+    border: 2px solid #feb4c8;
+    background-color: #feb4c8;
+    border-radius: 10px;
+    margin-right: 2%;
+    margin-left:2%;
+    width: 75px;
+}   
+.postnord-logo{
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 75px;
+}
+
+.dhl-logo{
+    border-radius: 10px;
+    margin-right: 2%;
+    margin-left:2%;
+    width: 75px;
+}
+
 .send-orderBtn:hover{
     background-color:whitesmoke;
     border: 2px solid #BFAE30;
@@ -50,14 +138,55 @@ text-align: center;
     border: 2px solid salmon;
     display: flex;
     float: right;
-    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-    .payment{
-        font-size: 18px;
-        margin-top: 10px;
-        padding: 20px;
-    }
-    
+.classy{
+    text-align: left;
+    margin: 5px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.VISA {
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 75px;
+}
+.Mastercard{
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 75px;
+}
+.Leverans-Btn{
+    border-radius: 20px;
+    border: 4px solid whitesmoke;
+    background-color:#BFAE30 ;
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    height:60px; 
+    width:120px; 
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+}
+
+.levbtn{
+    text-decoration: none;
+}
+
+.Leverans-Btn:hover{
+    background-color:whitesmoke;
+    border: 2px solid #BFAE30;
+    color: black;
+}
+
+.payment{
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 20px;
+}
+ 
 @media only screen and (max-width: 600px){
     .section-shopcart{
         flex-direction: column; 
@@ -86,8 +215,3 @@ text-align: center;
     
     
 }
-
-
-    
-
-
