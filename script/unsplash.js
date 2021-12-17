@@ -8,11 +8,11 @@ fetch('https://api.unsplash.com/search/photos?page=1&query=pearl&per_page=4&clie
     
         let { width, height } = image
         let imageURL = image.urls.regular
-        let imageWidth = image
-        let imageHeight = image
+        let imageWidth = 50
+        let imageHeight = image.urls.regular
   
         // if (width > height)      
-          document.querySelector('.parent').innerHTML += `<img class='child' src="${imageURL}">`
+          document.querySelector('.grid').innerHTML += `<img class='grid__item' src="${imageURL}">`
           
           // div.style.backgroundURL = imageURL
 }

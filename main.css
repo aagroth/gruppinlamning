@@ -537,12 +537,12 @@ svg {
     margin-bottom: 40px; }
   .container .contactInfo,
   .contactForm {
-    width: 100%; } }
-
-@media screen and (min-width: 600px) {
-  .child {
-    height: auto;
-    width: auto; } }
+    width: 100%; }
+  .sec .title {
+    font-size: 1.5rem; }
+  .sec .decription {
+    line-height: 35px;
+    font-size: 16px; } }
 
 .bgPearlbba {
   position: relative;
@@ -559,7 +559,7 @@ svg {
   bottom: 0;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top, #5a497a, transparent);
+  background: linear-gradient(to top, #BfaE30);
   z-index: 1000; }
 
 .bgPearlbba img {
@@ -712,15 +712,31 @@ svg {
   .productCard .productPrice {
     text-align: center; }
 
-.child {
-  background-color: #4398e3;
-  height: 20rem;
-  width: 0rem; }
-
 .parent {
+  display: flex;
+  background-image: url(/images/bestseller01.jpg);
+  background-size: 50%;
+  position: relative;
+  z-index: 20;
+  padding: 0;
+  margin: 0; }
+
+.parent ul {
+  list-style: none; }
+
+.grid {
   display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 500px 500px; }
+  padding: 0;
+  margin: 0;
+  grid-template-columns: repeat(3, 50vw);
+  grid-auto-rows: 30vw;
+  grid-auto-flow: dense;
+  z-index: 5; }
+
+.grid__item {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
 
 .sec {
   position: relative;
@@ -730,7 +746,7 @@ svg {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #bfae30; }
+  background: #BfaE30; }
 
 .sec h2 {
   display: flex;
