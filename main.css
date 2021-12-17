@@ -758,19 +758,16 @@ link.active {
   padding-left: 2%; }
 
 .shopcart-list {
-  min-height: 40vh;
-  max-width: 650px;
   justify-content: space-around;
   margin-top: 30px; }
 
 .product-header {
-  width: 100%;
-  max-width: 650px;
   display: flex;
   justify-content: flex-start;
   border-bottom: 4px solid #8477C7;
   font-size: large;
-  padding-bottom: 0.8%; }
+  padding-bottom: 0.8%;
+  padding-top: 20px; }
 
 .product-title {
   width: 45%;
@@ -829,16 +826,22 @@ link.active {
 }
 */
 .overview-box {
+  width: 30%;
   display: flex;
   float: right;
   flex-direction: column;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding-top: 17.3px; }
 
 .payment {
   font-size: large;
   margin-top: 30px;
-  padding-bottom: 0.8%;
+  padding-left: 2%;
+  padding-right: 4%;
+  padding-bottom: 0.8%; }
+
+.pay {
   border-bottom: 4px solid #8477C7; }
 
 .classy {
@@ -893,17 +896,17 @@ link.active {
   border-radius: 10px;
   margin-right: 2%;
   margin-left: 2%;
-  width: 75px; }
+  width: 50px; }
 
 .VISA {
   border-radius: 10px;
   margin-right: 5px;
-  width: 75px; }
+  width: 50px; }
 
 .Mastercard {
   border-radius: 10px;
   margin-right: 5px;
-  width: 75px; }
+  width: 50px; }
 
 .Leverans-Btn {
   border-radius: 20px;
@@ -945,7 +948,7 @@ link.active {
   width: 50px;
   height: 50px; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .section-shopcart {
     flex-direction: column;
     display: flex;
@@ -957,11 +960,11 @@ link.active {
   .total {
     margin-right: 2%; }
   .overview-box {
-    border: 2px solid salmon;
     justify-content: center;
     width: 90vw;
-    height: 50vh;
     font-size: 22px; }
+  .classy {
+    padding-left: 0%; }
   .delivery-container {
     display: flex;
     flex-direction: column;

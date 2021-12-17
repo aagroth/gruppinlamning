@@ -18,21 +18,18 @@ text-align: center;
     padding-left: 2%;
 }
 
-.shopcart-list{
-    min-height: 40vh; 
-    max-width: 650px;
+.shopcart-list{ 
     justify-content: space-around;
     margin-top: 30px;
 }
 
 .product-header {
-    width: 100%;
-    max-width: 650px;
     display: flex;
     justify-content: flex-start;
     border-bottom: 4px solid #8477C7;
     font-size: large;
     padding-bottom: 0.8%;
+    padding-top: 20px;
 }
 
 .product-title {
@@ -79,6 +76,7 @@ text-align: center;
 .products img {
     width: 75px;
 }
+
 /*
 .basketTotalContainer { 
     display: flex;
@@ -95,18 +93,26 @@ text-align: center;
     width: 10%;
 }
 */
+
 .overview-box{
+    width: 30%;
     display: flex;
     float: right;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding-top: 17.3px;
 }
 
 .payment{
     font-size: large;
     margin-top: 30px;
+    padding-left: 2%;
+    padding-right: 4%;
     padding-bottom:0.8%;
+}
+
+.pay{
     border-bottom: 4px solid #8477C7;
 }
 
@@ -169,19 +175,19 @@ text-align: center;
     border-radius: 10px;
     margin-right: 2%;
     margin-left:2%;
-    width: 75px;
+    width: 50px;
 } 
 
 .VISA {
     border-radius: 10px;
     margin-right: 5px;
-    width: 75px;
+    width: 50px;
 }
 
 .Mastercard{
     border-radius: 10px;
     margin-right: 5px;
-    width: 75px;
+    width: 50px;
 }
 
 .Leverans-Btn{
@@ -231,7 +237,7 @@ text-align: center;
 }
 
  
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
     .section-shopcart{
         flex-direction: column; 
         display: flex;
@@ -247,11 +253,17 @@ text-align: center;
     }
 
     .overview-box{
-        border: 2px solid salmon;
         justify-content: center;
         width: 90vw;
-        height: 50vh;
         font-size: 22px;
+    }
+    .classy{
+        padding-left: 0%;
+    }
+
+    .payment{
+        
+        
     }
 
     .delivery-container{
