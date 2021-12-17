@@ -7,12 +7,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #8477c7 ;
+    background: #5a497a ;
 }
 
 .contact .content{
     max-width: 800px;
     text-align: center;
+    margin-bottom: 30px;
 }
 .contact .content h2 {
     font-size: 36px;
@@ -23,7 +24,9 @@
 
 .contact .content p {
     font-weight: 300;
+    font-size: 16px;
     color: #FAF8E6;
+    line-height: 30px;
 }
 
 .container{
@@ -31,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+
 }
 .container .contactInfo{
     width: 50%;
@@ -65,7 +68,7 @@
 }
 .container .contactInfo .box .text h3{
     font-weight: 500;
-    color: #180673;
+    color: whitesmoke;
 }
 .contactForm{
     width: 40%;
@@ -111,16 +114,21 @@
 .contactForm .inputBox textarea:valid ~ span{
     color: #8477c7;
     font-size: 12px;
-    transform: translate(-20px);
+    transform: translate(20px);
 }
-.contactForm .inputBox .input [type="submit"]{
+.inputBoxBtn {
     width: 80px;
     background-color: #FAF8E6;
     color: #180673;
-    border: none;
+    border-style: none;
+    text-decoration: none;
+    border-radius: 40%;
     cursor: pointer;
     padding: 10px;
     font-size: 15px;
+}
+.inputBoxBtn:hover{
+    color: #FAF8E6;
 }
 .social{
     display: flex;
@@ -128,36 +136,15 @@
     margin-top: 70px;
 }
 .social .twitter{
-    margin-right: 8px;
+    margin-right: 20px;
     font-size: 20px;
 }
 .social .facebook{
-    margin-right: 8px;
+    margin-right: 20px;
     font-size: 20px;
 }
 .social .instagram{
-    margin-right: 8px;
+    margin-right: 20px;
     font-size: 20px;
     
-}
-
-@media (max-width: 991px)
-{
-    .contact
-    {
-        padding: 50px;
-    }
-    .container
-    {
-        flex-direction: column;
-    }
-    .container .contactInfo
-    {
-        margin-bottom: 40px;
-    }
-    .container .contactInfo,
-    .contactForm
-    {
-        width: 100%;
-    }
 }
