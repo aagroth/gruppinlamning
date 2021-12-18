@@ -766,8 +766,7 @@ link.active {
   justify-content: flex-start;
   border-bottom: 4px solid #8477C7;
   font-size: large;
-  padding-bottom: 0.8%;
-  padding-top: 20px; }
+  padding-bottom: 0.8%; }
 
 .product-title {
   width: 45%;
@@ -831,15 +830,14 @@ link.active {
   float: right;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  padding-top: 17.3px; }
+  text-align: center; }
 
 .payment {
   font-size: large;
-  margin-top: 30px;
+  margin-top: 41px;
   padding-left: 2%;
   padding-right: 4%;
-  padding-bottom: 0.8%; }
+  padding-bottom: 1%; }
 
 .pay {
   border-bottom: 4px solid #8477C7; }
@@ -919,9 +917,10 @@ link.active {
   margin: 0 auto;
   margin-top: 20px;
   display: block; }
-
-.levbtn {
-  text-decoration: none; }
+  .Leverans-Btn .levbtn {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; }
 
 .Leverans-Btn:hover {
   background-color: whitesmoke;

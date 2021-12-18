@@ -1,4 +1,4 @@
-var products = JSON.parse(localStorage.getItem('Products'));
+/* var products = JSON.parse(localStorage.getItem('Products'));
 
 if (products === null) {
     document.getElementById("shopYta").innerHTML +=
@@ -38,7 +38,6 @@ else {
         "<div>" + basketStatus + "</div>" +
         "</div>" +
         "</div>";
-        
     });
 }
 
@@ -81,8 +80,6 @@ function addToWishList(art) {
 
 	// Vi skapar ett temporärt JS-objekt från JSON strängen i localStorage
 	var temp_object = JSON.parse(localStorage.getItem('Products')); 
-
-	console.log(temp_object); // Här är det temporära JS-objektet som vi kan ändra på
 	
 	// Vi loopar igenom objektet för att hitta matchande artikelnummer
 	for (i=0; i < temp_object.length; i++) {
@@ -112,7 +109,8 @@ function removeProductFromWishList(art) {
 	localStorage.Products = JSON.stringify(temp_object);  // Nu ersätter vi vår localStorage med den uppdaterade datan
     window.location.reload();
 }
+*/
 
 
 
-
+import { getProductsFromLocalStorage } from './products.js';
