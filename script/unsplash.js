@@ -18,25 +18,3 @@ fetch('https://api.unsplash.com/search/photos?page=1&query=pearl&per_page=4&clie
 }
 ``})
 })
-
-/*
-//jquery syntax
-fetch.getJSON('https://api.unsplash.com/search/photos?page=1&query=pearl_id=AEOBTsOUS5ImwxRIGUxpdSGTcy_9qw3cqpCMtUuyYUU', 
-function(data) {
-    console.log(data);
-
-var imageList = data.results; 
-$.each(imageList, function(i, val){
-
-    var image = val;
-    var imageURL = val.urls.regular;
-    var imageWidth = val.width;
-    var imageHeight = val.height;
-
-    if (imageWidth > imageHeight){
-
-    $('.unsplash').append('<div class="image"><img src=" '+ imageURL +'"</div>');
-    }
-});
-    
-}); */

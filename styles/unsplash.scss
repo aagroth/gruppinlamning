@@ -1,25 +1,3 @@
-// .child{
-  
-//    background-color: rgb(67, 152, 227);
-//    width: 100%;
-// display: flex;  
-// object-fit:cover;
-// justify-content: flex-end;
-    
-   
-// }
-
-// .parent {
-//     display: grid;
-//     grid-template-columns: 500px 500px 500px;   
-//     grid-template-areas: 
-//     "content content content";
-//     position: relative;
-
-
-
-// }
-
 .parent {
     display: flex;
     background-image: url(/images/bestseller01.jpg);
@@ -30,8 +8,6 @@
     margin: 0;
 
 }
-
-
 
 .parent ul{
     list-style: none;

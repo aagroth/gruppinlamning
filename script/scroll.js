@@ -1,10 +1,7 @@
-
-
 let plants = document.getElementById('plants');
 let shapeFront = document.getElementById('shapeFront');
 let shapeBehind = document.getElementById('shapeBehind');
 let text = document.getElementById('text');
-let btn = document.querySelector('#btn');
 
 window.addEventListener('scroll', function(){
     let value = window.scrollY; 
