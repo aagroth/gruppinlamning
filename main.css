@@ -16,11 +16,10 @@ body {
   left: 0;
   top: 0;
   width: 100vw;
-  height: auto;
-  background-color: #5a497a; }
+  height: auto; }
 
 #header .header {
-  min-height: 8vh;
+  min-height: 10vh;
   background-color: rgba(100, 42, 142, 0.24);
   transition: .3s ease background-color;
   padding-top: 30px;
@@ -41,7 +40,7 @@ body {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: #5a497a;
+  background-color: #bfae30;
   width: 75vw;
   height: 100vh;
   left: 100%;
@@ -50,7 +49,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   overflow-x: hidden;
   transition: .5s ease left; }
 
@@ -65,25 +63,14 @@ body {
   color: whitesmoke;
   text-transform: uppercase;
   padding: 20px;
-  display: block; }
-
-#header .nav-list ul a::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  color: rgba(240, 248, 255, 0.021);
-  font-size: 10rem;
-  letter-spacing: 50px;
-  z-index: 20;
-  transition: .3s ease letter-spacing; }
-
-#header .nav-list ul li:hover a::after {
-  transform: translate(-50%, -50%) scale(1);
-  letter-spacing: initial; }
+  display: block;
+  z-index: 25;
+  transition: ease-in-out 0.1s; }
 
 #header .nav-list ul li:hover a {
-  color: yellow; }
+  color: yellow;
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .brand a h1 {
   color: whitesmoke;
@@ -99,7 +86,7 @@ body {
   font: 1.5rem;
   font-weight: 500;
   transform: translateY(-150px);
-  z-index: 9;
+  z-index: 7;
   text-transform: uppercase;
   letter-spacing: 15px;
   text-decoration: none; }
@@ -248,18 +235,20 @@ body {
   margin-right: 20px;
   font-size: 20px; }
 
-.btn {
+#btn {
   text-decoration: none;
-  display: inline-block;
-  z-index: 12;
+  top: 0;
+  left: 0;
   padding: 8px 30px;
-  border: solid 2px #FAF8E6;
+  border: 3px solid whitesmoke;
   border-radius: 40px;
   color: whitesmoke;
+  font-weight: 400;
   font-size: 1.5rem;
-  transition: ease-in-out 0.5s; }
+  transition: ease-in-out 0.5s;
+  z-index: 0; }
 
-.btn:hover {
+#btn:hover {
   background-color: #FAF8E6;
   color: #5a497a; }
 
@@ -547,7 +536,12 @@ svg {
     margin-bottom: 40px; }
   .container .contactInfo,
   .contactForm {
-    width: 100%; } }
+    width: 100%; }
+  .sec .title {
+    font-size: 1.5rem; }
+  .sec .decription {
+    line-height: 35px;
+    font-size: 16px; } }
 
 .bgPearlbba {
   position: relative;
@@ -564,7 +558,7 @@ svg {
   bottom: 0;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top, #5a497a, transparent);
+  background: linear-gradient(to top, #BfaE30);
   z-index: 1000; }
 
 .bgPearlbba img {
@@ -604,10 +598,10 @@ svg {
   position: absolute;
   left: -50%;
   top: calc(100% + .25rem);
-  background-color: #5a497a;
+  background-color: #bfae30;
   width: 500px;
   line-height: 50px;
-  opacity: 0%;
+  opacity: 0.1%;
   pointer-events: none;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms  ease-in-out; }
@@ -617,7 +611,8 @@ svg {
   border-style: none;
   background-color: transparent;
   padding: 0%;
-  padding: 6px, 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: whitesmoke;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -625,15 +620,22 @@ svg {
   font-weight: 500;
   transition: ease-in-out 0.1s; }
 
-a #dropdownText:hover,
-#dropdownText.active {
-  color: red; }
+.dropdownMenu a {
+  color: whitesmoke !important; }
 
-.link:hover,
-link.active {
+.link:hover {
   color: yellow;
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+.dropdownText1:hover {
+  color: yellow !important; }
+
+.dropdownText2:hover {
+  color: yellow !important; }
+
+.dropdownText3:hover {
+  color: yellow !important; }
 
 .dropdown > li .link:focus + .dropdownMenu {
   opacity: 1;
@@ -740,6 +742,57 @@ link.active {
       background-color: transparent;
       border: none; }
 
+.parent {
+  display: flex;
+  background-image: url(/images/bestseller01.jpg);
+  background-size: 50%;
+  position: relative;
+  z-index: 20;
+  padding: 0;
+  margin: 0; }
+
+.parent ul {
+  list-style: none; }
+
+.grid {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: repeat(3, 50vw);
+  grid-auto-rows: 30vw;
+  grid-auto-flow: dense;
+  z-index: 5; }
+
+.grid__item {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.sec {
+  position: relative;
+  min-height: auto;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #BfaE30; }
+
+.sec h2 {
+  display: flex;
+  text-align: center;
+  color: whitesmoke;
+  margin: 15px;
+  font-size: 2.5rem; }
+
+.sec p {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 25px;
+  color: whitesmoke;
+  line-height: 35px;
+  font-size: 20px; }
+
 .title-varukorg {
   margin-top: 170px;
   font-size: 3rem;
@@ -788,18 +841,6 @@ link.active {
   align-items: center;
   margin-right: 6%; }
 
-/*
-.product {
-    width: 45%;
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-}
-    
-.product ion-icon {
-    cursor: pointer;
-}
-*/
 .products {
   width: 100%;
   display: flex;
@@ -808,22 +849,6 @@ link.active {
 .products img {
   width: 75px; }
 
-/*
-.basketTotalContainer { 
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.basketTotalTitle {
-    width: 30%;
-}
-
-.basketTotal {
-    width: 10%;
-}
-*/
 .overview-box {
   width: 30%;
   display: flex;
@@ -969,12 +994,3 @@ link.active {
     flex-direction: column;
     justify-content: center;
     align-items: center; } }
-
-#wishListYta {
-  display: flex;
-  flex-direction: row;
-  margin-top: 30px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  min-height: 200px; }

@@ -1,16 +1,18 @@
-.btn{
+#btn{
     text-decoration: none;
-    display: inline-block;
-    z-index: 12;
+    top: 0;
+    left: 0;
     padding: 8px 30px;
-    border: solid 2px #FAF8E6;
+    border: 3px solid whitesmoke;
     border-radius: 40px;
     color: whitesmoke;
+    font-weight: 400;
     font-size: 1.5rem;
     transition: ease-in-out 0.5s;
+    z-index: 0;
 }
 
-.btn:hover {
+#btn:hover {
     background-color: #FAF8E6;
     color:#5a497a;
 }
