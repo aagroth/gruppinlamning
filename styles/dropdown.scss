@@ -7,13 +7,14 @@
     position: absolute;
     left: -50%;
     top: calc(100% + .25rem);
-    background-color: #5a497a;
+    background-color: #bfae30;
     width: 500px;
     line-height: 50px;
-    opacity: 0%;
+    opacity: 0.1%;
     pointer-events: none;
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms  ease-in-out;
+
   }
   
    .link {
@@ -21,7 +22,8 @@
     border-style: none;
     background-color: transparent;
     padding: 0%;
-    padding: 6px, 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: whitesmoke;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -29,21 +31,29 @@
     font-weight: 500;
     transition: ease-in-out 0.1s; 
   }
-  
-  
- a #dropdownText:hover,
- #dropdownText.active
- {
-  color: red;
-} 
-  
-  
-  .link:hover,
-  link.active {
-    color: yellow;
-    padding-top: 5px;
-    padding-bottom: 5px;
+
+  .dropdownMenu a{
+    color: whitesmoke !important;
+
   }
+  
+.link:hover {
+color: yellow;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.dropdownText1:hover
+{ color: yellow !important;
+} 
+.dropdownText2:hover{
+    color: yellow !important;
+}
+
+.dropdownText3:hover{
+    color: yellow !important;
+}
+
   
   .dropdown > li .link:focus + .dropdownMenu {
     opacity: 1;

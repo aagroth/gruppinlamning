@@ -8,6 +8,16 @@ hamburger.addEventListener('click', () => {
     mobile_menu.classList.toggle('active');
 });
 
+document.addEventListener('scroll', () => {
+    var scroll_position = window.scrollY;
+   
+    if(scroll_position > 250){
+        header.style.backgroundColor = '#5a497a';
+    }else{
+        header.style.backgroundColor = '#5a497a';
+    }
+});
+
 menu_item.forEach((menu_item) => {
     menu_item.addEventListener('click', () => {
         hamburger.classList.toggle('active');
