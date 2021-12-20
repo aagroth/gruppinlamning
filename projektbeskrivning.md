@@ -14,6 +14,7 @@ Genom att applicera ett agilt arbetssätt i projektarbetet har vi fått känna p
 Metod:
 Vi startde med att sätta upp en Trello med tickets för att kunna fördela arbetsuppgifterna för att få en tydlig struktur i vårt arbete med e-handelssidan. 
 Vi markerade upp alla tickets med antingen S, M, L eller XL beronde på hur stor/svår uppgiften kunde tänkas vara. Sedan hade vi satt upp två sprintar som vi förflyttade tickets till i olika steg. Ett exempel på hur vi arbetade agilt var att vi under sprintplaneringen bestämde en viss typ av design på headern. I slutet på första sprinten så insåg vi att det vore bättre att byta design för att göra den mer funktionell för användaren. Samt att sätta ihop funktionella funktioner för de olika sidorna som är sammankopplade med localStorage.
+I näst sista sprint så började vi succesivt att mergea ihop och felsöka all vår kod, avslutningsvis i sista sprinten så kommenterade koden för att skapa en tydlighet i att läsa av koden. Så att vem som helst ska kunna läsa våran kod och förstå vad den gör.  
 
 Under hela processen har det funnit en Scrum master och 4 projektetmedlemmar.  
 
