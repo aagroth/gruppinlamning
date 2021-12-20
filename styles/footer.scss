@@ -1,5 +1,5 @@
-
-.contact{
+// hela footer boxen som är lila
+.contact{ 
     position: relative;
     min-height: 100vh;
     padding: 50px 100px;
@@ -15,20 +15,21 @@
     text-align: center;
     margin-bottom: 30px;
 }
+// rubriken för hela footern
 .contact .content h2 {
     font-size: 36px;
     font-weight: 500;
     color:#FAF8E6;
     margin-bottom: 14px;
 }
-
+// brödtexten som är under stora rubriken ""kontakta oss" 
 .contact .content p {
     font-weight: 300;
     font-size: 16px;
     color: #FAF8E6;
     line-height: 30px;
 }
-
+// boxen till vänster som innefattar våra uppgifter
 .container{
     width: 100%;
     display: flex;
@@ -70,6 +71,7 @@
     font-weight: 500;
     color: whitesmoke;
 }
+// boxen som är till höger med kontaktformuläret
 .contactForm{
     width: 40%;
     padding: 40px;
@@ -77,11 +79,13 @@
     border-radius: 30px;
     border: 2px solid #736711;
 }
+// rubriken skicka meddelande
 .contactForm h2{
     font-size: 30px;
     color: #180673;
     font-weight: 500;
 }
+// nedan är sedan input fältet i kontaktformuläret
 .contactForm .inputBox{
     position: relative;
     width: 100%;
@@ -116,6 +120,7 @@
     font-size: 12px;
     transform: translate(20px);
 }
+// knappen i kontaktformuläret för att skicka meddelandet
 .inputBoxBtn {
     width: 80px;
     background-color: #FAF8E6;
@@ -130,6 +135,7 @@
 .inputBoxBtn:hover{
     color: #FAF8E6;
 }
+// 3 sociala medie-symboler, som visas längst ner på sidan
 .social{
     display: flex;
     color: #FAF8E6;
