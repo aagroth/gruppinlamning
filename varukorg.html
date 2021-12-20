@@ -51,28 +51,26 @@
     <section class="section-shopcart">
 
         <div class="shopcart-container">
-            <div class="product-header">
-                <h2 class="product-title">Produkt</h2>
-
-                <h2 class="price">Pris</h2>
-
-                <h2 class="quantity">Antal</h2>
-
-                <h2 class="total">Total</h2>
-            </div>
-            <div id="shopcart-list">
-
-            </div>
+            
+            <table id="shopcart-list">
+                <tr>
+                  <th>Produkt</th>
+                  <th>Pris</th>
+                  <th>Artnummer</th>
+                  <th>Antal</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+              </table>
         </div>
 
         <div class="overview-box">
             <h3 class="payment">Betalningsöversikt</h3>
             <div class="pay"> </div>
             <div class="classy">
-                <p>Beställningsvärde</p>
-                <p>Frakt</p>
+                <p>Frakt: <span id="freightCost"></span></p>
                 <hr class="slutsum">
-                <p class="slutsumma">Summa:</p>
+                <p class="slutsumma">Summa: <span id="totalSum"></span></p>
             </div>        
 
             <button class="send-orderBtn">Betala</button>  

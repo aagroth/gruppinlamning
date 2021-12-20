@@ -1,27 +1,21 @@
 var products = JSON.parse(localStorage.getItem('Products'));
+var wishList = [];
+let htmlId = "wishListYta";
 
 for (i = 0; i < products.length; i++) {
     var product = products[i];
-    console.log(product)
-    product.wishListStatus = [];
-    console.log(product.wishListStatus)
-    
-    
-     /*if (product.wishListStatus === false) {
-        var falseProducts = false;
-        console.log(falseProducts)
+
+    if (product.wishListStatus === true){
+        
+        wishList.push(product)    
     }
-    else if (product.wishListStatus === true){
-        var trueProducts = true;
-        console.log(trueProducts)
-    } */
 }
 
-/* if (falseProducts === false) {
-    document.getElementById("wishListYta").innerHTML +=
+if (wishList.length === 0) {
+    document.getElementById(htmlId).innerHTML +=
     "<h2>Listan är tom</h2>";
 }
 
-else if (trueProducts === true){
-    loadProducts();
-} */
+else {
+    loadProducts(wishList, htmlId);
+}
