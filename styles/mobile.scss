@@ -1,8 +1,17 @@
+// Start Mobile size 
+
 @media only screen and (max-width: 1200px) {
+
+    // Start hamburger menyn
 
     header .hamburger{
         display: none;
     }
+
+    // End hamburger menyn
+
+    // Start header nav 
+
     header .nav-list ul{
         position: initial;
         display: block;
@@ -26,9 +35,16 @@
         font-size: 1.5rem;
     }
 
+    // Start header nav 
+
+    // Start homepage (startsida) 
+
     .bgPearlbba #text {
         font-size: 3rem;
     }
+    // End homepage (startsida) 
+
+    // Start contact (footer) 
 
     .contact
     {
@@ -48,6 +64,10 @@
         width: 100%;
     }
 
+    // End contact (footer) 
+
+    // Start rublik 
+
     .sec .title {
         font-size: 1.5rem;  
     }
@@ -57,7 +77,11 @@
         font-size: 16px;
     }
   
+    // End rublik  
+
 }
+
+//// Start Mobile size 
 
 
 
