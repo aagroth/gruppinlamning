@@ -31,7 +31,6 @@ text-align: center;
     border-bottom: 4px solid #8477C7;
     font-size: large;
     padding-bottom: 0.8%;
-    padding-top: 20px;
 }
 
 .product-title {
@@ -57,18 +56,7 @@ text-align: center;
     align-items: center;
     margin-right: 6%;
 }
-/*
-.product {
-    width: 45%;
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-}
-    
-.product ion-icon {
-    cursor: pointer;
-}
-*/
+
 .products {
     width: 100%;
     display: flex;
@@ -79,23 +67,6 @@ text-align: center;
     width: 75px;
 }
 
-/*
-.basketTotalContainer { 
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.basketTotalTitle {
-    width: 30%;
-}
-
-.basketTotal {
-    width: 10%;
-}
-*/
-
 .overview-box{
     width: 30%;
     display: flex;
@@ -103,15 +74,14 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 17.3px;
 }
 
 .payment{
     font-size: large;
-    margin-top: 30px;
+    margin-top: 41px;
     padding-left: 2%;
     padding-right: 4%;
-    padding-bottom:0.8%;
+    padding-bottom:1%;
 }
 
 .pay{
@@ -203,10 +173,12 @@ text-align: center;
     margin: 0 auto;
     margin-top: 20px;
     display: block;
-}
 
-.levbtn{
-    text-decoration: none;
+    .levbtn {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
 }
 
 .Leverans-Btn:hover{

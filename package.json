@@ -1,15 +1,16 @@
 {
-  "name": "gruppinlamning",
+  "name": "sass",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass styles/main.scss main.css -w",
+    "scss": "node-sass styles/main.scss main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "sass": "^1.45.0"
   },
   "repository": {
     "type": "git",

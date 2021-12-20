@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./script/varukorg.js" defer></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" 
     integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" 
     crossorigin="anonymous"></script>
     <script src="./script/header.js" defer></script>
+    <script src="./script/products.js" defer></script>
+    <script src="./script/varukorg.js" defer></script>
 </head>
 
-<!-- Sidhuvud -->
+<!-- Start Navbar -->
 <header id="header">
     <div class="header container">
         <div class="nav-bar">
@@ -41,34 +42,31 @@
         </div>
     </div>
 </header>
+<!-- End Navbar -->
 
-<!-- Sidans body -->
+<!-- Start site body -->
 <body>
     <h1 class="title-varukorg">VARUKORG</h1>
     <hr>
     <section class="section-shopcart">
         /* Här hamnar produkterna som köparen vill ha, med information om pris, antal och totalpris för den produkten.  */
         <div class="shopcart-container">
-            <div class="shopcart-list">
-                <div class="product-header">
-        
-                    <h5 class="product-title">PRODUKT</h5>
+            <div class="product-header">
+                <h2 class="product-title">Produkt</h2>
 
-                    <h5 class="price">PRIS</h5>
+                <h2 class="price">Pris</h2>
 
-                    <h5 class="quantity">ANTAL</h5>
+                <h2 class="quantity">Antal</h2>
 
-                    <h5 class="total">TOTALT</h5>
-                
-                </div
-                <div class="products"> 
+                <h2 class="total">Total</h2>
+            </div>
+            <div id="shopcart-list">
 
-                </div>
             </div>
         </div>
         / Det som är lagt i varukorgen  */
         <div class="overview-box">
-            <h5 class="payment">Betalningsöversikt</h5>
+            <h3 class="payment">Betalningsöversikt</h3>
             <div class="pay"> </div>
             <div class="classy">
                 <p>Beställningsvärde</p>
@@ -77,8 +75,8 @@
                 <p class="slutsumma">Summa:</p>
             </div>         
 
-            <button class="send-orderBtn">BETALA</button>  
-            <p class="pay-with">Vi tar emot:</p>
+            <button class="send-orderBtn">Betala</button>  
+            <h3 class="pay-with">Vi tar emot:</h3>
 
             <div class="payment-container">
                 <img class="klarna-logo" src="./images/klarna.png" alt="Klarna Logotyp">
@@ -86,7 +84,7 @@
                 <img class="Mastercard" src="./images/mastercard.png" alt="Mastercard Logotyp">
             </div>
 
-            <button class="Leverans-Btn"> <a class="levbtn" href="leveransvillkor.html" target="_blank"> <i class="fas fa-box"></i>  Leverans</a></button>
+            <button class="Leverans-Btn"><a class="levbtn" href="leveransvillkor.html" target="_blank"><i class="fas fa-box"></i>  Leverans</a></button>
 
             <div class="delivery-container">
                 <img class="postnord-logo" src="./images/postnord.png" alt="Postnord Logotyp">
@@ -94,15 +92,10 @@
             </div>
         </div>
     </section>
-
-   
-   
-   
-   
-
 </body>
+<!-- End site body -->
 
-<!-- Sidfot -->
+<!-- Start footer -->
 <footer>
     <section class="contact" id="downToContact">
         <div class="content">
@@ -159,9 +152,8 @@
             <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
             <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
         </div>
-
     </section>
-
 </footer>
+<!-- End footer -->
 
 </html>
