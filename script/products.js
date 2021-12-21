@@ -1,5 +1,6 @@
-// var products = JSON.parse(localStorage.getItem('Products'));
 
+// Funktionen loopar igenom arrayen med objekt från localStorage. Nyckeln hämtas i varedera .js script. 
+// Funktionen placerar ut alla värden och bygger "produktkorten" utefter vald design.
 function loadProducts(products, htmlId) {
 
     products.map((product) => {
@@ -36,6 +37,8 @@ function loadProducts(products, htmlId) {
     });
 }
 
+// Funktionen kollar efter key "Products" på varukorg.js och laddar därefter funktionen loadShopCart ifall vissa parametrar stämmer.
+// Funktionen innehåller deklarered leveranskostnad, totalsumma och skriver även ut all nödvändig data. 
 function loadShopCart(products) {
 
 	let totalSum = 0; 
@@ -43,18 +46,15 @@ function loadShopCart(products) {
 
 	products.map((product) => {
 
-         
-
-
-            let removeFromBasket = "<button onclick=\"removeProductFromBasketList("+product.artNr+")\" class=\"basketListBtn basketListFalse\"><i class=\"fas fa-shopping-basket\" color=\"yellow\"></i></button>";
-			let subtractFromBasket = "<button onclick=\"subtractFromBasketList("+product.artNr+")\" class=\"basketListBtn basketListFalse\"><i class=\"fas fa-shopping-basket\" color=\"yellow\"></i></button>";
-            let addToBasket = "<button onclick=\"addToBasketList("+product.artNr+")\" class=\"basketListBtn basketListTrue\"><i class=\"fas fa-shopping-basket\" color=\"white\"></i></button>";
+            let removeFromBasket = "<button onclick=\"removeProductFromBasketList("+product.artNr+")\" class=\"basketListBtn basketListFalse\"><i class=\"fas fa-ban\"></i></button>";
+			let subtractFromBasket = "<button onclick=\"subtractFromBasketList("+product.artNr+")\" class=\"basketListBtn basketListFalse\"><i class=\"fas fa-minus\"></i></button>";
+            let addToBasket = "<button onclick=\"addToBasketList("+product.artNr+")\" class=\"basketListBtn basketListTrue\"><i class=\"fas fa-plus\"></i></button>";
         
         
         document.getElementById("shopcart-list").innerHTML += 
 		"<tr>" +
-			"<td><img src=\"./products_images/" + product.image + "\">" + product.title + "</td>" +
-			"<td>" + product.price + "</td>" +
+			"<td><img src=\"./products_images/" + product.image + "\"></td>" +
+			"<td>" + product.price + "kr" + "</td>" +
 			"<td>" + product.artNr + "</td>" +
 			"<td>" + subtractFromBasket + product.basketStatus + addToBasket + "</td>" +
 			"<td>" + product.basketStatus * product.price + "</td>" +
@@ -71,7 +71,7 @@ function loadShopCart(products) {
 }
     
 
-
+// Funktion för att ta bort produkt från varukorg
 function removeProductFromBasketList(art) {
     // Vi skapar ett temporärt JS-objekt från JSON strängen i localStorage
 	var temp_object = JSON.parse(localStorage.getItem('Products')); 
@@ -81,7 +81,7 @@ function removeProductFromBasketList(art) {
 	// Vi loopar igenom objektet för att hitta matchande artikelnummer
 	for (i=0; i < temp_object.length; i++) {
 		if (temp_object[i].artNr == art) {
-			temp_object[i].basketStatus = 0; // Vi ändrar till true för wishlist propertyn
+			temp_object[i].basketStatus = 0; // Vi ändrar till 0 för wishlist propertyn
 		}
 	}
 
@@ -89,16 +89,17 @@ function removeProductFromBasketList(art) {
     window.location.reload();
 }
 
+// Funktion för att dra bort en vara från varukorg 
 function subtractFromBasketList(art) {
-    // Vi skapar ett temporärt JS-objekt från JSON strängen i localStorage
+    
 	var temp_object = JSON.parse(localStorage.getItem('Products')); 
 
-	console.log(temp_object); // Här är det temporära JS-objektet som vi kan ändra på
+	console.log(temp_object); 
 	
-	// Vi loopar igenom objektet för att hitta matchande artikelnummer
+	
 	for (i=0; i < temp_object.length; i++) {
 		if (temp_object[i].artNr == art) {
-			temp_object[i].basketStatus -= 1; // Vi ändrar till true för wishlist propertyn
+			temp_object[i].basketStatus -= 1; // Ifall användaren trycker minus så dras 1 från basketStatus.
 		}
 	}
 
@@ -106,6 +107,7 @@ function subtractFromBasketList(art) {
     window.location.reload();
 }
 
+// Funktion för att lägga till produkt i varukorg
 function addToBasketList(art) {
 
 	var temp_object = JSON.parse(localStorage.getItem('Products')); 
@@ -114,7 +116,7 @@ function addToBasketList(art) {
 	
 	for (i=0; i < temp_object.length; i++) {
 		if (temp_object[i].artNr == art) {
-			temp_object[i].basketStatus += 1;
+			temp_object[i].basketStatus += 1; // Ifall användaren trycker plus så adderas 1 till basketStatus.
 		}
 	}
 
@@ -122,6 +124,7 @@ function addToBasketList(art) {
 	window.location.reload();
 }
 
+// Funktion för att lägga till produkten till wishlisten
 function addToWishList(art) {
 
 	var temp_object = JSON.parse(localStorage.getItem('Products')); 
@@ -136,7 +139,7 @@ function addToWishList(art) {
 	window.location.reload();
 }
 
-
+// Funktion för ta bort produkten från wishlisten
 function removeProductFromWishList(art) {
 
 	var temp_object = JSON.parse(localStorage.getItem('Products')); 

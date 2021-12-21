@@ -1,3 +1,7 @@
+// Varje enskild korrigeras med hjälp av flex
+// och beroende på skärmstorlek så lägger dom sig på rad eller höjd.
+
+// Resterande inställningar för varje unikt produktkort hämtas från shopsida.scss
 #wishListYta {
     display: flex;
     flex-direction: row;

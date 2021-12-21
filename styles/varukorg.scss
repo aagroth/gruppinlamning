@@ -11,77 +11,50 @@ text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
 
-/* För att kunna se de olika produkterna som är tillagda i varukorgen, pris, antal och slutsumma för denna produkt */
-.shopcart-container{
+    /* För att kunna se de olika produkterna som är tillagda i varukorgen, pris, antal och slutsumma för denna produkt */
+    .shopcart-container{
     width: 50vw;
     height: auto; 
     padding-right: 2%;
     padding-left: 2%;
-}
-
-.shopcart-list{ 
-    justify-content: space-around;
     margin-top: 30px;
-}
 
-/* Vi har valt att visa produkten, dess pris, antal av varan och totalen i en rad. */
-.product-header {
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 4px solid #8477C7;
-    font-size: large;
-    padding-bottom: 0.8%;
-}
+    th {
+        padding: 20px;
+    }
 
-.product-title {
-    width: 45%;
-    margin-left: 2%;
-}
+    td {
+        padding: 20px;
+    }
 
-.price {
-    width: 15%;
-    display: flex;
-    align-items: center;
-}
+    img {
+        width: 100px;
+    }
 
-.quantity {
-    width: 30%;
-    display: flex;
-    align-items: center;
-}
+    button {
+        margin: 10px;
+        font-size: 15px;
+    }
 
-.total {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    margin-right: 6%;
+    .shopcart-list{ 
+        justify-content: space-around;
+        margin-top: 30px;
+    }
 }
-/*
-.products {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.products img {
-    width: 75px;
-}
-*/
-/* I betalningsöversikten ser man kostnaden av alla varor man lagt i vaukorgen plus frakt och därefter slutsumman. */
+    /* I betalningsöversikten ser man kostnaden av alla varor man lagt i vaukorgen plus frakt och därefter slutsumman. */
 .overview-box{
     width: 30%;
     display: flex;
     float: right;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
+}
 }
 
 .payment{
     font-size: large;
-    margin-top: 41px;
+    margin-top: 30px;
     padding-left: 2%;
     padding-right: 4%;
     padding-bottom:1%;
@@ -168,28 +141,34 @@ text-align: center;
 
 /* Här har vi gjort en knapp för att lättare kunna läsa om våra leveransvillkor innan man ska betala */
 .Leverans-Btn{
+    text-decoration: none;
     border-radius: 20px;
     border: 4px solid whitesmoke;
     background-color:#BFAE30 ;
     font-family: 'Ubuntu';
-    font-size: 12px;
+    font-size: 16px;
     height:60px; 
     width:120px; 
     margin: 0 auto;
     margin-top: 20px;
     display: block;
+    color: #FAF8E6;
 
-    .levbtn {
+    a {
         text-decoration: none;
-        color: white;
-        font-size: 16px;
+        color: #FAF8E6;
     }
 }
 
 .Leverans-Btn:hover{
+    text-decoration: none;
     background-color:whitesmoke;
     border: 2px solid #BFAE30;
     color: black;
+
+    a {
+        color: black;
+    }
 }
 
 /* Bilder/loggan på våra leverantörer som finns att välja mellan*/
@@ -217,7 +196,7 @@ text-align: center;
 }
 
  
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1500px){
     .section-shopcart{
         flex-direction: column; 
         display: flex;
@@ -227,16 +206,16 @@ text-align: center;
             width: 90vw;
             height: 60vh; 
         }
+        .overview-box{
+            justify-content: center;
+            width: 90vw;
+            font-size: 22px;
+        }
     }
     .total{
         margin-right: 2%;
     }
 
-    .overview-box{
-        justify-content: center;
-        width: 90vw;
-        font-size: 22px;
-    }
     .classy{
         padding-left: 0%;
     }
@@ -247,4 +226,5 @@ text-align: center;
         justify-content: center;
         align-items: center;
     }
+
 }

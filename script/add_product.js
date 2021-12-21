@@ -10,7 +10,7 @@ let inputPrice = document.querySelector(".productPrice").value;
 let inputFile = document.querySelector(".productImg").files[0].name;
 
 // Skapar ett objekt och fyller denna med input från användaren samt tilldelar varje objekt
-// ett default värde av wishListStatus och basketStatus false.
+// ett default värde av wishListStatus false och basketStatus 0.
 var product = {
     artNr: inputArtNr,
     title: inputTitle,

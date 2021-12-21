@@ -1,6 +1,7 @@
 // Hämtar listan med objekt med hjälp av nyckeln "Products".
 // Och tilldelar den till products
 var products = JSON.parse(localStorage.getItem('Products'));
+// Ger variablen htmlId ett värde av diven i .html
 let htmlId = "shopYta";
 
 // Ifall products är tom så skrivs "Listan är tom" ut på sidan.

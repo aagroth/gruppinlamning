@@ -5,6 +5,8 @@
     text-align: center;
 }
 
+// Varje enskild korrigeras med hjälp av flex
+// och beroende på skärmstorlek så lägger dom sig på rad eller höjd.
 .productList {
     display: flex;
     flex-direction: row;
@@ -14,6 +16,7 @@
     margin-bottom: 30px;
 }
 
+// Inställningar för produktkorten som skrivs ut
 .productCard {
     display: flex;
     flex-direction: column;
