@@ -1,10 +1,11 @@
-
+// sectionen för hela om oss sidan
 .section_omoss{
     margin-bottom: 100px;
     margin-top: 200px;
     width: 100%;
     background-color: white;
 }
+// boxen i section som omfamnar hela om oss sidan
 .container_omoss{
     width: 80%;
     display: block;
@@ -16,6 +17,7 @@
    margin-left: 10%;
    margin-right: 10%;
 }
+// titeln för om oss 
 .title_omoss h1{
     text-align: center;
 }
@@ -30,12 +32,14 @@
     text-align: center;
     
 }
+// styleing för paragrafen 
 .parag_omoss{
     margin-top: 10px;
     font-family: 'Ubuntu';
     font-size: 16px;
     line-height: 1.6;
 }
+// knappen skicka ett meddlande som skickar ner dig till kontakt formuläret
 .button_omoss{
     margin-top: 20px;
 }
@@ -55,6 +59,7 @@
     border: 2px solid #736711;
     color: black;
 }
+// mediaquerys för att vara mobilanpassad
 @media screen and (max-width: 768px){
     .container_omoss{
         width: 80%;

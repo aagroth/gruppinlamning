@@ -1,7 +1,11 @@
+// Parallax effect
+
 let plants = document.getElementById('plants');
 let shapeFront = document.getElementById('shapeFront');
 let shapeBehind = document.getElementById('shapeBehind');
 let text = document.getElementById('text');
+
+// create scroll function for parallax
 
 window.addEventListener('scroll', function(){
     let value = window.scrollY; 

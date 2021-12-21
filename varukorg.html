@@ -51,30 +51,34 @@
     <section class="section-shopcart">
         <!-- Här till vänster i varukorgen hamnar produkterna som köparen vill ha, med information om pris, antal och totalpris för den produkten. -->
         <div class="shopcart-container">
-            <div class="product-header">
-                <h2 class="product-title">Produkt</h2>
-
-                <h2 class="price">Pris</h2>
-
-                <h2 class="quantity">Antal</h2>
-
-                <h2 class="total">Total</h2>
-            </div>
-            <div id="shopcart-list">
-
-            </div>
+            
+            <table id="shopcart-list">
+                <tr>
+                  <th>Produkt</th>
+                  <th>Pris</th>
+                  <th>Artnummer</th>
+                  <th>Antal</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+              </table>
         </div>
         <!-- Beställningsvärdet för det som är lagt i varukorgen visas nu till höger och vad slutsumman totalt blir med fraktavgift. -->
         <div class="overview-box">
             <h3 class="payment">Betalningsöversikt</h3>
             <div class="pay"> </div>
             <div class="classy">
-                <p>Beställningsvärde</p>
-                <p>Frakt</p>
+                <p>Frakt: <span id="freightCost"></span></p>
                 <hr class="slutsum">
+<<<<<<< HEAD
                 <p class="slutsumma">Summa:</p>
             </div>         
             <!-- En knapp för att slutföra sin beställning "Betala" och vilka betalningsalternativ som finns, med ikoner för de olika alternativen. -->
+=======
+                <p class="slutsumma">Summa: <span id="totalSum"></span></p>
+            </div>        
+
+>>>>>>> 6fdf4bdf2b3b63ac1d7063950835224ba96272e5
             <button class="send-orderBtn">Betala</button>  
             <h3 class="pay-with">Vi tar emot:</h3>
 
