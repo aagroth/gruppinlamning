@@ -17,6 +17,8 @@
     <script src="./script/varukorg.js" defer></script>
 </head>
 
+<!-- Start site body -->
+<body>
 <!-- Start Navbar -->
 <header id="header">
     <div class="header container">
@@ -44,8 +46,6 @@
 </header>
 <!-- End Navbar -->
 
-<!-- Start site body -->
-<body>
     <h1 class="title-varukorg">VARUKORG</h1>
     <hr>
     <section class="section-shopcart">
@@ -84,7 +84,7 @@
                 <img class="Mastercard" src="./images/mastercard.png" alt="Mastercard Logotyp">
             </div>
             <!-- En knapp med en genväg för att läsa om våra leveransvillkor, under finns även ikoner/bilder på de olika leverantörerna -->
-            <button class="Leverans-Btn"><a href="leveransvillkor.html" target="_blank"><i class="fas fa-box"></i>  Leverans</a></button>
+            <button class="Leverans-Btn" onclick="location.href = 'leveransvillkor.html';"><i class="fas fa-box"></i>  Leverans</button>
 
             <div class="delivery-container">
                 <img class="postnord-logo" src="./images/postnord.png" alt="Postnord Logotyp">
@@ -92,8 +92,6 @@
             </div>
         </div>
     </section>
-</body>
-<!-- End site body -->
 
 <!-- Start footer -->
 <footer>
@@ -130,11 +128,11 @@
                 <form>
                     <h2>SKICKA MEDDELANDE</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="name" required="required">
                         <span>NAMN</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="name" required="required">
                         <span>EMAIL</span>
                     </div>
                     <div class="inputBox">
@@ -142,7 +140,7 @@
                         <span>SKRIV DITT MEDDELANDE...</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="" value="SKICKA">
+                        <input type="submit" name="name" value="SKICKA">
                     </div>
                 </form>
             </div>
@@ -155,5 +153,7 @@
     </section>
 </footer>
 <!-- End footer -->
+</body>
+<!-- End site body -->
 
 </html>
