@@ -23,5 +23,7 @@ if (shoppingCart.length > 0) {
 document.querySelector(".send-orderBtn").addEventListener("click", payButton);
 
 function payButton() {
+    localStorage.clear();
     alert("Grattis dina varor är påväg!")
+    window.location.reload();
 }
